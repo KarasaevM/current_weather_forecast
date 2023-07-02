@@ -1,0 +1,20 @@
+// Mixins
+@mixin gapAdap($desktop, $tablet, $mobile) {
+	gap: $desktop;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		gap: $tablet;
+	}
+	@media screen and (max-width: 767px) {
+		gap: $mobile;
+	}
+}
+
+@mixin fontSizeAdap($desktop, $tablet, $mobile) {
+	font-size: $desktop;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		font-size: $tablet;
+	}
+	@media screen and (max-width: 767px) {
+		font-size: $mobile;
+	}
+}

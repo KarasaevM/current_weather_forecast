@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'main';
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	
+}
+
+body {
+	font-family: $font;
+	font-size: $font_size + px;
+	font-weight: $font_weight;
+	background-color: $bg_color;
+	color: $color;
+	border: none;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+}
+
+._container {
+	max-width: $max_width_container + px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+

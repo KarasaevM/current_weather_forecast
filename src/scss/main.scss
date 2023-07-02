@@ -1,0 +1,173 @@
+// Main styles
+.search__city {
+	display: flex;
+	align-items: center;
+	background-color: #24343D;
+	border-radius: 12px;
+	padding: 0 30px;
+	justify-content: space-between;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		padding: 20px 50px;
+		margin-bottom: 10px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 10px 40px;
+	}
+	button {
+		background: transparent;
+		border: none;
+	}
+	input {
+		font-size:20px;
+		font-weight: 275;
+		color: $color;
+		width: 100%;
+
+		background: transparent;
+	 &::-webkit-input-placeholder { /* WebKit browsers */
+		color: $color;
+	 }
+	 &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		color: $color;
+	 }
+	 &::-moz-placeholder { /* Mozilla Firefox 19+ */
+		color: $color;
+	 }
+	 &:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color: $color;
+	 }
+	 /* плавное изменение прозрачности  placeholder-а при фокусе */
+	 &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+	 &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+	 &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+	 &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+	 &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+	 &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+	 &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+	 &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+	}
+} 
+
+.container__filters {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		display: block;
+		margin-bottom: 30px;
+	}
+	@media screen and (max-width: 767px) {
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+	padding: 10px 30px;
+	justify-content: space-between;
+	background-color: #24343D;
+	border-radius: 12px;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		padding: 15px 40px;
+	}
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	h2 {
+		font-size: 23px;
+		font-weight: 500;
+	}
+}
+.filters__items {
+	display: flex;
+	gap: 53px;
+	align-items: center;
+	li {
+		border: 1px solid #ffffff4c;
+		border-radius: 15px;
+		padding: 10px 15px;
+	}
+}
+
+// Cards Weather Styles
+.card_weather__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_weather__item.only {
+	max-width: max-content;
+	width: 100%;
+	padding: 30px 82px;
+	margin: 0 auto;
+	@media screen and (max-width: 767px) {
+		padding: 10px 12px;
+	}
+	img {
+		align-self: center;
+		@media screen and (min-width: 767px) and (max-width: 1023px) {
+			margin-bottom: 10px;
+		}
+	}
+	.main__icon_weather {
+		@media screen and (max-width: 767px) {
+			width: 250px;
+		}
+	}
+}
+
+.card_weather__item {
+	background-color: #24353E;
+	border-radius: 20px;
+	box-shadow: 10px 9px 70px 0px rgba(36, 53, 62, 0.40);
+	max-width: 251px;
+	max-height: max-content;
+	padding: 40px 52px;
+	.main__icon_weather {
+		filter: drop-shadow(-5px 10px 25px $color);
+	}
+	h2 {
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+}
+
+.card__weather_container {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	@media screen and (min-width: 767px) and (max-width: 1023px) {
+		display: block;
+	}
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+.container_info {
+	display: flex;
+	@include gapAdap(80px, 50px, 20px);
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+	align-items: center;
+}
+
+.info__weather_item {
+	display: flex;
+	gap: 20px;
+	margin-bottom: 20px;
+	.info__w {
+		align-self: center;
+	}
+}
+
+.go_search {
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	max-width: 400px;
+}

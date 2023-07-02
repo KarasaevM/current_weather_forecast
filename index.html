@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather</title>
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container _container">
+					<div class="header__body">
+						<div class="header__main">
+							<a href="" class="header__logo">Dark Weather</a>
+						</div>
+						<div class="header__navigation">
+							<div class="header__menu menu">
+								<nav class="menu__body">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a href="" class="menu__link active">Home</a>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">Download App</a>
+										</li>
+										<li class="menu__item">
+											<a href="" class="menu__link">Contact us</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="header__actions actions-header">
+							<a class="btn_form">Sign Up</a>
+						</div>
+					</div>
+					<div class="burger_sidebar">
+						<div class="header__main">
+							<a href="" class="header__logo">Dark Weather</a>
+						</div>
+						<button class="open_burger__menu">
+							<img src="public/images/burger-menu-open.svg" alt="" />
+						</button>
+						<!-- <div class="menu__burger">
+							<div class="ul menu_burger__list">
+								<ul class="menu__burger_items">
+									<li class="menu__burger_item">
+										<a href="" class="menu__link active">Home</a>
+									</li>
+									<li class="menu__burger_item">
+										<a href="" class="menu__link">Download App</a>
+									</li>
+									<li class="menu__burger_item">
+										<a href="" class="menu__link">Contact us</a>
+									</li>
+									<li class="menu__burger_item">
+										<a class="btn_form">Sign Up</a>
+									</li>
+								</ul>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="_container">
+			<div class="main__body">
+				<div class="container__filters">
+					<form class="search__city">
+						<input type="text" placeholder="Search Here" id="search-input" />
+						<button>
+							<img src="public/images/weather/search.svg" alt="" />
+						</button>
+					</form>
+					<div class="filters">
+						<ul class="filters__items">
+							<h2>Filters</h2>
+							<li class="filters__item">
+								Coldest
+								<svg
+									width="19"
+									height="9"
+									viewBox="0 0 19 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.02865 8.97785C8.29948 8.97785 7.57031 8.6966 7.01823 8.14452L0.226563 1.35285C-0.0755208 1.05077 -0.0755208 0.550771 0.226563 0.248688C0.528646 -0.0533956 1.02865 -0.0533956 1.33073 0.248688L8.1224 7.04035C8.6224 7.54035 9.4349 7.54035 9.9349 7.04035L16.7266 0.248688C17.0286 -0.0533956 17.5286 -0.0533956 17.8307 0.248688C18.1328 0.550771 18.1328 1.05077 17.8307 1.35285L11.0391 8.14452C10.487 8.6966 9.75781 8.97785 9.02865 8.97785Z"
+										fill="white"
+									/>
+								</svg>
+							</li>
+							<li class="filters__item">
+								10°C - 20°С
+								<svg
+									width="19"
+									height="9"
+									viewBox="0 0 19 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.02865 8.97785C8.29948 8.97785 7.57031 8.6966 7.01823 8.14452L0.226563 1.35285C-0.0755208 1.05077 -0.0755208 0.550771 0.226563 0.248688C0.528646 -0.0533956 1.02865 -0.0533956 1.33073 0.248688L8.1224 7.04035C8.6224 7.54035 9.4349 7.54035 9.9349 7.04035L16.7266 0.248688C17.0286 -0.0533956 17.5286 -0.0533956 17.8307 0.248688C18.1328 0.550771 18.1328 1.05077 17.8307 1.35285L11.0391 8.14452C10.487 8.6966 9.75781 8.97785 9.02865 8.97785Z"
+										fill="white"
+									/>
+								</svg>
+							</li>
+							<li class="filters__item">
+								Rainy
+								<svg
+									width="19"
+									height="9"
+									viewBox="0 0 19 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.02865 8.97785C8.29948 8.97785 7.57031 8.6966 7.01823 8.14452L0.226563 1.35285C-0.0755208 1.05077 -0.0755208 0.550771 0.226563 0.248688C0.528646 -0.0533956 1.02865 -0.0533956 1.33073 0.248688L8.1224 7.04035C8.6224 7.54035 9.4349 7.54035 9.9349 7.04035L16.7266 0.248688C17.0286 -0.0533956 17.5286 -0.0533956 17.8307 0.248688C18.1328 0.550771 18.1328 1.05077 17.8307 1.35285L11.0391 8.14452C10.487 8.6966 9.75781 8.97785 9.02865 8.97785Z"
+										fill="white"
+									/>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="current_weather__filters">
+					<ul class="card_weather__items">
+						<!-- <li class="card_weather__item only">
+							<div class="card__weather_container">
+								<img
+									src="public/images/weather/sunny.png"
+									alt=""
+									class="main__icon_weather"
+								/>
+								<div class="info__weather_curr">
+									<h2>Atyrau 20C</h2>
+									<div class="container_info">
+										<ul class="info__weather">
+											<li class="info__weather_item">
+												<img
+													src="https://cdn.weatherapi.com/weather/64x64/night/116.png"
+													alt=""
+												/>
+												<div class="info__w">
+													<p>60%</p>
+													<p>Cloudy</p>
+												</div>
+											</li>
+											<li class="info__weather_item">
+												<img src="public/images/weather/feelslike.svg" alt="" />
+												<div class="info__w">
+													<p>60C</p>
+													<p>Feelslike</p>
+												</div>
+											</li>
+											<li class="info__weather_item">
+												<img src="public/images/weather/humidity.svg" alt="" />
+												<div class="info__w">
+													<p>60C</p>
+													<p>Humidity</p>
+												</div>
+											</li>
+										</ul>
+										<ul class="info__weather">
+											<li class="info__weather_item">
+												<img src="public/images/weather/pressure.svg" alt="" />
+												<div class="info__w">
+													<p>20%</p>
+													<p>Pressure</p>
+												</div>
+											</li>
+											<li class="info__weather_item">
+												<img src="public/images/weather/windspeed.svg" alt="" />
+												<div class="info__w">
+													<p>20 km/h</p>
+													<p>Wind Speed</p>
+												</div>
+											</li>
+											<li class="info__weather_item">
+												<img
+													src="public/images/weather/description.svg"
+													alt=""
+												/>
+												<div class="info__w">
+													<p>Cloudy</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li> -->
+						<h2 class="go_search">
+							Seeing the weather of the whole world with Dark Weather...
+						</h2>
+						<!-- <li class="card_weather__item">
+							<img src="public/images/weather/cloudy.png" alt="" height="120" />
+							<h2>Tehran 35°С</h2>
+							<p>Wind speed: 11 km</p>
+							<p>Feelslike: 19:52</p>
+							<p>Cloudy</p>
+						</li>
+						<li class="card_weather__item">
+							<img src="public/images/weather/sunny.png" alt="" height="120" />
+							<h2>Qom 41°С</h2>
+							<p>Wind speed: 5 km</p>
+							<p>Feelslike: 19:52</p>
+							<p>Sunny</p>
+						</li>
+						<li class="card_weather__item">
+							<img src="public/images/weather/rainy.png" alt="" height="120" />
+							<h2>Gilan 23°С</h2>
+							<p>Wind speed: 23 km</p>
+							<p>Feelslike: 19:52</p>
+							<p>Rainy</p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</main>
+		<script src="src/js/main.js"></script>
+	</body>
+</html>
