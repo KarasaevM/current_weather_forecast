@@ -27,4 +27,4 @@
 **WeatherAPI** - *https://www.weatherapi.com*
 
 ## Contact:
-### Email: muhammedkarasaev@mail.ru
+**Email: muhammedkarasaev@mail.ru**
