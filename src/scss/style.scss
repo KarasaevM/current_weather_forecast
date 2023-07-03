@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 @import 'variables';
 @import 'mixins';
 @import 'header';
@@ -16,7 +16,10 @@ body {
 	font-family: $font;
 	font-size: $font_size + px;
 	font-weight: $font_weight;
-	background-color: $bg_color;
+	background: url(../../public/images/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
 	color: $color;
 	border: none;
 }

@@ -1,72 +1,35 @@
 @import 'variables';
 
-// header
 .header {
-	max-height: 180px;
-	padding: 31px 0;
-	margin-bottom: 50px;
-	@media screen and (min-width: 767px) and (max-width: 1023px) {
-		padding: 21px 10px;
+	padding: 40px 20px;
+	@media screen and (max-width: 767px) {
+		padding: 30px 10px;
 	}
 }
 
-.header__body {
+h1 {
+	@media screen and (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+
+.header__wrapper {
 	display: flex;
+	align-items: center; 
 	justify-content: space-between;
-	align-items: center;
-	@media screen and (max-width: 767px) {
-	display: none;
-	}
 }
 
-.burger_sidebar {
-	display: none;
-	@media screen and (max-width: 767px) {
-		display: flex;
-		justify-content: space-between;
-		padding: 0 10px;
-		}
-}
-
-.open_burger__menu {
-	background: transparent;
-	border: none;
-}
-
-.menu__list {
+.information__temp_container {
 	display: flex;
-	@include gapAdap(50px, 20px, 10px)
-}
+	align-items: center; 
+	@include gapAdap(15px, 10px, 5px);
 
-.header__logo {
-	color: $color;
-	font-weight: 600;
-	@include fontSizeAdap(30px, 23px, 18px)
-
-}
-
-.menu__link.active {
-	font-weight: 400;
-}
-
-.menu__link {
-	color: $color;
-	font-weight: 300;
-	@include fontSizeAdap(20px, 17px, 14px);
-	&:hover {
-		color: $color_hover;
+	p {
+		text-align: right;
+		font-weight: 700;
+		font-size: 25px; 
+		@media screen and (max-width: 767px) {
+			font-size: 23px;
+		}
 	}
-}
-
-.btn_form {
-	background: linear-gradient(145deg, #3A5E72 0%, #5C93B1 100%);
-	box-shadow: 7px 7px 10px 0px rgba(79, 136, 167, 0.30) inset;
-	border: none;
-	color: $color;
-	padding: 20px 35px;
-	@media screen and (min-width: 767px) and (max-width: 1023px) {
-		padding: 11px 25px;
-	}
-	border-radius: 20px;
-	font-weight: 500;
 }
